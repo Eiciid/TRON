@@ -39,12 +39,12 @@ public class GameLogic {
 	{
 		width = maxWidth;
 		height = maxHeight;
-		colorP1 = new Color(3,3,173);
-		colorP2 = new Color(173, 3, 3 );
+		colorP1 = new Color(0,0,200);
+		colorP2 = new Color(200, 0, 0 );
 
 
 		player1 = new Player(getNewName("Joueur 1"), Player.LEFT, colorP1, width - 300, 420, 0);  //Gauche
-		player2 = new Player(getNewName("Joueur 2"), Player.RIGHT, colorP2, 0 + 300, 420, 0);  //Droite
+		player2 = new Player(getNewName("Joueur 2"), Player.RIGHT, colorP2, 300, 420, 0);  //Droite
 	}
 
 
@@ -171,8 +171,8 @@ public class GameLogic {
 	 */
 	public void  restart()
 	{
-		player1 = new Player(player1.getName(), Player.LEFT, colorP1,width - 300, 420, player1.getPoints());	//Replace le joueur 1 a gauche 
-		player2 = new Player(player2.getName(), Player.RIGHT, colorP2, 0 + 300, 420, player2.getPoints());		//Replace le joueur 2 a droite
+		player1 = new Player(player1.getName(), Player.LEFT, colorP1,width - 10, 10, player1.getPoints());	//Replace le joueur 1 a gauche 
+		player2 = new Player(player2.getName(), Player.RIGHT, colorP2, 0 + 10, 830, player2.getPoints());		//Replace le joueur 2 a droite
 
 	}
 

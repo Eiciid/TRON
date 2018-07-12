@@ -63,43 +63,6 @@ public class Player {
 
 
 
-	/**
-	 * Checks if is can fire.
-	 *
-	 * @return true, if is can fire
-	 */
-	public boolean isCanFire() {
-		return canFire;
-	}
-
-	/**
-	 * Sets the checks if is visible.
-	 *
-	 * @param bol the new checks if is visible
-	 */
-	public void setIsVisible(boolean bol)
-	{
-		isVisible = bol;
-	}
-
-	/**
-	 * Sets the can fire.
-	 *
-	 * @param canFire the new can fire
-	 */
-	public void setCanFire(boolean canFire) {
-		this.canFire = canFire;
-	}
-
-	/**
-	 * Gets the can fire.
-	 *
-	 * @return the can fire
-	 */
-	public boolean getCanFire() {
-		return canFire;
-	}
-
 
 
 	/**
