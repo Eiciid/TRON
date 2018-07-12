@@ -19,7 +19,7 @@ public class GameFrame extends JFrame implements ActionListener{
 	private static final long serialVersionUID = 1L;
 
 	/** The Constant FRAME_HEIGHT. */
-	public static final int FRAME_WIDTH = 1197, FRAME_HEIGHT = 899;
+	public static final int FRAME_WIDTH = 1200, FRAME_HEIGHT = 900;
 
 	/** The menu bar. */
 	private JMenuBar menuBar;
@@ -51,8 +51,8 @@ public class GameFrame extends JFrame implements ActionListener{
 		//Menu
 
 		menuBar = new JMenuBar();
-		controls = new JMenuItem("Contrôles");
 		menu = new JMenu("Options");
+		controls = new JMenuItem("Contrôles");
 		start = new JMenuItem("Jouer");
 		
 		menu.add(start);

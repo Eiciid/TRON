@@ -43,8 +43,6 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener{
 	/** The timer general. */
 	Timer timerGeneral;
 	
-	/** The timer bullet. */
-	Timer timerBullet;
 
 	/**
 	 * Instantiates a new game panel.
@@ -128,10 +126,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener{
 			}
 			repaint();
 		}
-		if(e.getSource() == timerBullet)
-		{
-			repaint();
-		}
+
 
 		
 
@@ -183,7 +178,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener{
 				logic.setP2Direction(Player.RIGHT);
 		}
 		
-		if(e.getKeyCode() == KeyEvent.VK_F2)
+		if(e.getKeyCode() == KeyEvent.VK_SPACE)
 		{
 			start();
 		}

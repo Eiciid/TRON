@@ -172,7 +172,7 @@ public class GameLogic {
 	public void  restart()
 	{
 		player1 = new Player(player1.getName(), Player.LEFT, colorP1,width - 10, 10, player1.getPoints());	//Replace le joueur 1 a gauche 
-		player2 = new Player(player2.getName(), Player.RIGHT, colorP2, 0 + 10, 830, player2.getPoints());		//Replace le joueur 2 a droite
+		player2 = new Player(player2.getName(), Player.RIGHT, colorP2, -10 + 10, 830, player2.getPoints());		//Replace le joueur 2 a droite
 
 	}
 

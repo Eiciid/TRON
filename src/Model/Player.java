@@ -24,8 +24,7 @@ public class Player {
 	/** The color. */
 	private Color color;
 	
-	/** The can fire. */
-	private boolean canFire;
+
 	
 	/** The flicker. */
 	private boolean isVisible, flicker;
@@ -54,7 +53,6 @@ public class Player {
 		this.direction = direction;
 		this.color = color;
 		head = new LengthNode(x, y, null);
-		canFire = true;
 		points = point;
 		isVisible = true;
 		flicker = false;
@@ -206,7 +204,7 @@ public class Player {
         }
         
         
-        System.out.println("Le joueur " + this.getName() + " à gagné!");
+        System.out.println(this.getName() + " à perdu");
         
         
     }
